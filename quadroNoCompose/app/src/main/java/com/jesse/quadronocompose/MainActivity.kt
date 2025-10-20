@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun ComposeQuadrantApp() {
     Column(Modifier.fillMaxWidth()) {
-        Rozw(Modifier.weight(1f)) {
+        Row(Modifier.weight(1f)) {
             ComposableInfoCard(
                 title = stringResource(R.string.first_title),
                 description = stringResource(R.string.first_description),
