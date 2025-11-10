@@ -1,6 +1,7 @@
 package com.jesse.limoeiro
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -13,8 +14,15 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentSize
-import androidx.compose.material3.IconButton
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonColors
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarColors
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -34,15 +42,17 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             LimoeiroTheme {
-                   Limoeiro(modifier = Modifier
-                       .fillMaxSize()
-                       .wrapContentSize(Alignment.Center)
-                   )
+                Limoeiro(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .wrapContentSize(Alignment.Center)
+                )
             }
         }
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Limoeiro(modifier: Modifier = Modifier) {
     val imagens = listOf(
@@ -61,14 +71,25 @@ fun Limoeiro(modifier: Modifier = Modifier) {
 
     var currentIndex by remember { mutableStateOf(0) }
 
+    TopAppBar(
+        title = { Text("Limoeiro")},
+        colors = TopAppBarDefaults.topAppBarColors(
+            containerColor = Color(0xFFC3ECD2)
+        )
+    )
 
-    Column(modifier = modifier
-        .fillMaxSize(),
+    Column(
+        modifier = modifier
+            .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        IconButton(
-            modifier = Modifier.size(200.dp),
+        Button(
+            modifier = Modifier,
+            shape = RoundedCornerShape(10.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFFC3ECD2)
+            ),
             onClick = {
                 currentIndex = (currentIndex + 1) % imagens.size
             }
@@ -76,8 +97,7 @@ fun Limoeiro(modifier: Modifier = Modifier) {
             Image(
                 painter = painterResource(id = imagens[currentIndex]),
                 contentDescription = texts[0],
-                Modifier.background(Color.Green)
-                    .padding(16.dp)
+                Modifier.padding(16.dp)
             )
         }
 
@@ -90,6 +110,7 @@ fun Limoeiro(modifier: Modifier = Modifier) {
 
     }
 }
+
 
 @Preview(showBackground = true)
 @Composable
