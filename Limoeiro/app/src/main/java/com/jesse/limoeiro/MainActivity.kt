@@ -72,7 +72,7 @@ fun Limoeiro(modifier: Modifier = Modifier) {
     var currentIndex by remember { mutableStateOf(0) }
 
     TopAppBar(
-        title = { Text("Limoeiro")},
+        title = { Text("Limoeiro") },
         colors = TopAppBarDefaults.topAppBarColors(
             containerColor = Color(0xFFC3ECD2)
         )
