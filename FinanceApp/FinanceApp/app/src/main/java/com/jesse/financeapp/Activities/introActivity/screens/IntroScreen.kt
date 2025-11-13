@@ -79,7 +79,7 @@ fun IntroScreen(
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Normal,
                 lineHeight = 22.sp
-                // parei em 12:23
+                // parei em 14:00
             )
         }
     }
