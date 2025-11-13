@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -35,19 +36,48 @@ class MainActivity : ComponentActivity() {
 // no jetpack compose , funcoes com a anotação composable devem começar com letra maiuscula
 @Composable
 fun Home(){
-    Column(
+//    Column(
+//        modifier = Modifier
+////            .fillMaxWidth()
+////            .fillMaxHeight()
+//            .fillMaxSize()
+//            .background(color = Color.Gray),
+//        horizontalAlignment = Alignment.CenterHorizontally,
+//        verticalArrangement = Arrangement.Center
+//    ) {
+//        Surface(
+//            modifier = Modifier.size(100.dp).weight(8f),
+//            color = Color.Green
+//        ) {
+//
+//        }
+//
+//        Surface(
+//            modifier = Modifier.size(100.dp).weight(2f),
+//            color = Color.Red
+//        ) {
+//
+//        }
+//    }
+
+
+    Row(
         modifier = Modifier
-//            .fillMaxWidth()
-//            .fillMaxHeight()
             .fillMaxSize()
             .background(color = Color.Gray),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+            horizontalArrangement = Arrangement.SpaceAround,
+            verticalAlignment = Alignment.CenterVertically
     ) {
         Surface(
-            modifier = Modifier
-                .size(100.dp),
+            modifier = Modifier.size(100.dp),
             color = Color.Green
+        ) {
+
+        }
+
+        Surface(
+            modifier = Modifier.size(100.dp),
+            color = Color.Red
         ) {
 
         }
