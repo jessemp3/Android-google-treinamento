@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.jesse.financeapp.Activities.DashboardActivity.components.HeaderSection
 import com.jesse.financeapp.Domain.ExpenseDomain
 
 @Composable
@@ -27,7 +28,9 @@ fun MainScreen(
                 .fillMaxSize()
                 .padding(bottom = 70.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
-        ) { }
+        ) {
+           item{ HeaderSection() }
+        }
     }
 }
 
