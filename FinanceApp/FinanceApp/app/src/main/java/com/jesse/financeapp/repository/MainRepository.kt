@@ -1,6 +1,6 @@
-package com.jesse.financeapp.Repository
+package com.jesse.financeapp.repository
 
-import com.jesse.financeapp.Domain.ExpenseDomain
+import com.jesse.financeapp.domain.ExpenseDomain
 
 class MainRepository {
     val items = mutableListOf(

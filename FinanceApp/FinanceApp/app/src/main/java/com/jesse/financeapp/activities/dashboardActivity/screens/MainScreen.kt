@@ -1,4 +1,4 @@
-package com.jesse.financeapp.Activities.dashboardActivity.screens
+package com.jesse.financeapp.activities.dashboardActivity.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -11,9 +11,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.jesse.financeapp.Activities.dashboardActivity.components.CardSection
-import com.jesse.financeapp.Activities.dashboardActivity.components.HeaderSection
-import com.jesse.financeapp.Domain.ExpenseDomain
+import com.jesse.financeapp.activities.dashboardActivity.components.ActionButtonRow
+import com.jesse.financeapp.activities.dashboardActivity.components.CardSection
+import com.jesse.financeapp.activities.dashboardActivity.components.HeaderSection
+import com.jesse.financeapp.domain.ExpenseDomain
 
 @Composable
 fun MainScreen(
@@ -33,6 +34,7 @@ fun MainScreen(
         ) {
             item { HeaderSection() }
             item { CardSection(onCardClick) }
+            item { ActionButtonRow() }
         }
     }
 }

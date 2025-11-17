@@ -1,4 +1,4 @@
-package com.jesse.financeapp.Domain
+package com.jesse.financeapp.domain
 
 import java.io.Serializable
 

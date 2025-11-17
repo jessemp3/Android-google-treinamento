@@ -1,4 +1,4 @@
-package com.jesse.financeapp.Activities.dashboardActivity
+package com.jesse.financeapp.activities.dashboardActivity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

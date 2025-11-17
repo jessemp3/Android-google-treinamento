@@ -1,4 +1,4 @@
-package com.jesse.financeapp.Activities.dashboardActivity.components
+package com.jesse.financeapp.activities.dashboardActivity.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

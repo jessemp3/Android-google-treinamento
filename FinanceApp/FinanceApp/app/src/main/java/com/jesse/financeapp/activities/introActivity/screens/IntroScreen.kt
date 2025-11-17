@@ -1,4 +1,4 @@
-package com.jesse.financeapp.Activities.introActivity.screens
+package com.jesse.financeapp.activities.introActivity.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -22,7 +22,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.jesse.financeapp.R
-import kotlinx.coroutines.flow.SharingStarted
 
 @Composable
 @Preview
