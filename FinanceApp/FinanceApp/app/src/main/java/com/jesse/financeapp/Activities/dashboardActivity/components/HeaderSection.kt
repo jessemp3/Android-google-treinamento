@@ -1,10 +1,9 @@
-package com.jesse.financeapp.Activities.DashboardActivity.components
+package com.jesse.financeapp.Activities.dashboardActivity.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -22,24 +21,24 @@ import com.jesse.financeapp.R
 
 @Preview()
 @Composable
-fun HeaderSection(){
+fun HeaderSection() {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(start = 16.dp,top = 48.dp , end = 16.dp ),
+            .padding(start = 16.dp, top = 48.dp, end = 16.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
-    ){
-        Column{
+    ) {
+        Column {
             Text(
                 text = "Hello Pitter Jackson",
-                color = Color(R.color.darkBlue),
+                color = Color.Blue,
                 fontSize = 19.sp,
                 fontWeight = FontWeight.Bold
             )
             Text(
                 text = "Hpitterjackson@gmail.com",
-                color = Color(R.color.darkBlue),
+                color = Color.Blue,
                 fontWeight = FontWeight.SemiBold,
                 fontSize = 14.sp
             )
