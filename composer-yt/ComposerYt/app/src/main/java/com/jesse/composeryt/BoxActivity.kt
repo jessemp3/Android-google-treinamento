@@ -38,7 +38,9 @@ class BoxActivity : AppCompatActivity() {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true,
+    device = "id:pixel_9"
+)
 
 @Composable
 fun Boxx(){
