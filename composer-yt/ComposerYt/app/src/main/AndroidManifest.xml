@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposerYt">
         <activity
-            android:name=".ScaffoldActivity"
+            android:name=".BoxActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,11 +21,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ScaffoldActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.ComposerYt">
-        </activity>
+            android:theme="@style/Theme.ComposerYt" />
     </application>
 
 </manifest>
