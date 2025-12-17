@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposerYt">
         <activity
+            android:name=".CanvasActivity"
+            android:exported="false" />
+        <activity
             android:name=".StateActivity"
             android:exported="false" />
         <activity
@@ -25,7 +28,7 @@
         </activity>
         <activity
             android:name=".ScaffoldActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
