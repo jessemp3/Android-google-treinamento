@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposerYt">
         <activity
+            android:name=".ImageActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image"
+            android:theme="@style/Theme.ComposerYt" />
+        <activity
             android:name=".CanvasActivity"
             android:exported="false" />
         <activity
